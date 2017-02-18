@@ -11,12 +11,9 @@ bool checkIfPrime(ULL);
 int main() {
     ULL n = 0;
 
-    printf("Enter n to which to count: ");
+    printf("Enter n to which to count: (> 0 you will experience some problems, dude)");
     scanf("%llu", &n);
-    if (n < 0) {
-        printf("Incorrect input");
-        exit(123);
-    }
+
     printf("\n");
 
     for (ULL i = 1; ; ++i) {

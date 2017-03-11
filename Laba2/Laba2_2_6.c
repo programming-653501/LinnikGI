@@ -5,20 +5,20 @@ long double fact(int N);
 long double row(int number, long double x, double E);
 
 int main() {
-    int x = 0;
+    float x = 0;
     double E;
     printf("f(x) = sin(x)\n"
                    "Enter x and E (accuracy): ");
-    scanf("%d %lf", &x, &E);
+    scanf("%f %lf", &x, &E);
 
     double sinResult = sin(x);
     long double recRowResult = row(1, x, E);
 
     long double previous = 0;
-    long double current = pow(-1, 0) * (pow(x, 2 * 0)/fact(2 * 0));
+    long double current = pow(-1, 0) * (pow(x, 1)/fact(1));
     long double iterResult = current;
 
-    for (int counter = 2; fabsl(current > previous ? current - previous : previous - current) > E; counter++) {
+    for (int counter = 2; fabsl(current > previous ? current - previous : previous - current) >= E; counter++) {
         previous = current;
         current = pow(-1, counter - 1) * (pow(x, 2 * counter - 1)/fact(2 * counter - 1));
         iterResult += current;
@@ -26,7 +26,7 @@ int main() {
 
     printf("sin from math.h: %lf\n      "
                    "Recursive: %Lf\n      "
-                   "Iterative: %Lf\n", sinResult, recRowResult, iterResult);
+                   "Iterative: %Lf — More effective\n", sinResult, recRowResult, iterResult);
 
     return 0;
 }

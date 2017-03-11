@@ -1,3 +1,4 @@
 /Users/gleblinkin/Desktop/Программирование/Laba2/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/gleblinkin/Desktop/Программирование/Laba2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/gleblinkin/Desktop/Программирование/Laba2/cmake-build-debug/CMakeFiles/Laba2_2_6.dir
 /Users/gleblinkin/Desktop/Программирование/Laba2/cmake-build-debug/CMakeFiles/Laba2_1_14.dir

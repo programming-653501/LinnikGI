@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Laba2_2_6
+
+# Build rule for target.
+Laba2_2_6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Laba2_2_6
+.PHONY : Laba2_2_6
+
+# fast build rule for target.
+Laba2_2_6/fast:
+	$(MAKE) -f CMakeFiles/Laba2_2_6.dir/build.make CMakeFiles/Laba2_2_6.dir/build
+.PHONY : Laba2_2_6/fast
+
+#=============================================================================
 # Target rules for targets named Laba2_1_14
 
 # Build rule for target.
@@ -150,6 +163,33 @@ Laba2.1.14.c.s:
 	$(MAKE) -f CMakeFiles/Laba2_1_14.dir/build.make CMakeFiles/Laba2_1_14.dir/Laba2.1.14.c.s
 .PHONY : Laba2.1.14.c.s
 
+Laba2_2_6.o: Laba2_2_6.c.o
+
+.PHONY : Laba2_2_6.o
+
+# target to build an object file
+Laba2_2_6.c.o:
+	$(MAKE) -f CMakeFiles/Laba2_2_6.dir/build.make CMakeFiles/Laba2_2_6.dir/Laba2_2_6.c.o
+.PHONY : Laba2_2_6.c.o
+
+Laba2_2_6.i: Laba2_2_6.c.i
+
+.PHONY : Laba2_2_6.i
+
+# target to preprocess a source file
+Laba2_2_6.c.i:
+	$(MAKE) -f CMakeFiles/Laba2_2_6.dir/build.make CMakeFiles/Laba2_2_6.dir/Laba2_2_6.c.i
+.PHONY : Laba2_2_6.c.i
+
+Laba2_2_6.s: Laba2_2_6.c.s
+
+.PHONY : Laba2_2_6.s
+
+# target to generate assembly for a file
+Laba2_2_6.c.s:
+	$(MAKE) -f CMakeFiles/Laba2_2_6.dir/build.make CMakeFiles/Laba2_2_6.dir/Laba2_2_6.c.s
+.PHONY : Laba2_2_6.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Laba2_2_6"
 	@echo "... Laba2_1_14"
 	@echo "... Laba2.1.14.o"
 	@echo "... Laba2.1.14.i"
 	@echo "... Laba2.1.14.s"
+	@echo "... Laba2_2_6.o"
+	@echo "... Laba2_2_6.i"
+	@echo "... Laba2_2_6.s"
 .PHONY : help
 
 

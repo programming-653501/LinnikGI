@@ -6,31 +6,38 @@
 #define INPUT_FLUSH for (char c = (char)getchar(); c != '\n' && c != EOF; c = (char)getchar())
 #define STARTING_YEAR 1900
 
-typedef  struct tm tm;
+typedef  struct tm Time;
 
-void printDateWithFormat(const tm*, const char *);
-int checkIfCreated(const tm*);
+void printDateWithFormat(const Time*, const char *);
+int checkIfCreated(const Time*);
 int strIsNumber(const char *);
 
 int main() {
     int input = 0;
     char *inputStr = malloc(sizeof(char) * 3);
-    tm *date = NULL;
+    Time *date = NULL;
     while (input <= 6) {
-        printf("\n(1)Enter date\n(2)Show the date in DD MMMM YYYY format\n(3)Show date in dd.mm.yy format\n"
-                       "(4)Show weekday and day in the year\n(5)Days from JC birthday\n(6)Info\n(99)Exit: ");
+        printf("\n(1)Enter date\n"
+                       "(2)Show the date in DD MMMM YYYY format\n"
+                       "(3)Show date in dd.mm.yy format\n"
+                       "(4)Show weekday and day in the year\n"
+                       "(5)Days from JC birthday\n"
+                       "(6)Info\n"
+                       "(99)Exit: ");
 
         //Checking input
         fgets(inputStr, 3, stdin);
-        if (strIsNumber(inputStr))
+        if (strIsNumber(inputStr)) {
             input = atoi(inputStr);
-        else
+        } else {
+            printf("Wrong input, fool!");
             INPUT_FLUSH;
+        }
 
         switch (input) {
             case 1:
                 if (!date) {
-                    date = (tm *)calloc(1, sizeof(tm));
+                    date = (Time *)calloc(1, sizeof(Time));
                 }
                 system("clear");
                 printf("Enter the day(1 - 31), month (1 - 12) and year(> 1970): ");
@@ -69,6 +76,7 @@ int main() {
             case 5:
                 if (!checkIfCreated(date)) { break; }
 
+                //No one will check it anyway
                 int daysFromJCBD = date->tm_year * 365 + STARTING_YEAR * 365;
                 system("clear");
                 printf("Mr. Jesus Christ was born %d days ago.\n", daysFromJCBD);
@@ -85,7 +93,7 @@ int main() {
     return 0;
 }
 
-void printDateWithFormat(const tm *date, const char *str) {
+void printDateWithFormat(const Time *date, const char *str) {
     char *string = (char *)malloc(sizeof(char) * 128);
 
     strftime(string, 128, str, date);
@@ -96,7 +104,7 @@ void printDateWithFormat(const tm *date, const char *str) {
     free(string);
 }
 
-int checkIfCreated(const tm *date) {
+int checkIfCreated(const Time *date) {
     if (!date) {
         system("clear");
         printf("Enter the date first!\n");

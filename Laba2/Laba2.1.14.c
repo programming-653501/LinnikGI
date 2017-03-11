@@ -30,7 +30,7 @@ int main() {
         switch (input) {
             case 1:
                 if (!date) {
-                    date = (tm *)calloc(1, sizeof(sizeof(tm)));
+                    date = (tm *)calloc(1, sizeof(tm));
                 }
                 system("clear");
                 printf("Enter the day(1 - 31), month (1 - 12) and year(> 1970): ");
@@ -44,6 +44,7 @@ int main() {
                     printf("You picked the wrong date, fool!\n");
                     break;
                 }
+
 
                 date->tm_mday = tempDay;
                 date->tm_mon = --tempMonth;

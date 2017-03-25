@@ -13,6 +13,7 @@ int main() {
     char *text = (char *)calloc(1024, sizeof(char));
     char *input = (char *)calloc(100, sizeof(char));
 
+    printf("Enter text (Double Enter to continue): ");
     while (scanf("%[^\n]%*c", input) == 1) {
         strcat(text, input);
         strcat(text, " ");
@@ -27,7 +28,6 @@ int main() {
         char firstChar = currentWord[0];
         deleteCharAtString(currentWord, 0);
         currentWord[length - 1] = firstChar;
-        printf("%s\n", currentWord);
         //Second editing (Deleting all repeating characters)
         for (int j = 0; j < length; ++j) {
             char currentCharacter = currentWord[j];
@@ -36,20 +36,19 @@ int main() {
                     deleteCharAtString(currentWord, k);
             }
         }
+        printf("%s ", currentWord);
     }
 
-
-    printf("%s\n", words->wordsArr[0]);
     //>Here goes memory deallocation code< doyebatsa zdes
     return 0;
 }
 
-WordsArray *getWordsFromString(char *string, const char *separator) {
+WordsArray *getWordsFromString(char *string, const char *separators) {
     char **words = (char **)malloc(sizeof(char *));
     int allocatedMemory = 1;
     int wordsCount = 0;
 
-    const char *token = strtok(string, separator);
+    const char *token = strtok(string, separators);
     for (; token; wordsCount++) {
         if (allocatedMemory < wordsCount + 1) {
             allocatedMemory *= 2;
@@ -57,7 +56,7 @@ WordsArray *getWordsFromString(char *string, const char *separator) {
         }
         words[wordsCount] = (char *)malloc(sizeof(char) * strlen(token));
         strcpy(words[wordsCount], token);
-        token = strtok(NULL, separator);
+        token = strtok(NULL, separators);
     }
     WordsArray *tempWords = (WordsArray *)malloc(sizeof(WordsArray));
     tempWords->count = wordsCount;

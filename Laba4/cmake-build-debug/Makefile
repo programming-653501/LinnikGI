@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Laba4
+# Target rules for targets named Laba4.2
 
 # Build rule for target.
-Laba4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Laba4
-.PHONY : Laba4
+Laba4.2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Laba4.2
+.PHONY : Laba4.2
 
 # fast build rule for target.
-Laba4/fast:
-	$(MAKE) -f CMakeFiles/Laba4.dir/build.make CMakeFiles/Laba4.dir/build
-.PHONY : Laba4/fast
+Laba4.2/fast:
+	$(MAKE) -f CMakeFiles/Laba4.2.dir/build.make CMakeFiles/Laba4.2.dir/build
+.PHONY : Laba4.2/fast
+
+#=============================================================================
+# Target rules for targets named Laba4.1
+
+# Build rule for target.
+Laba4.1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Laba4.1
+.PHONY : Laba4.1
+
+# fast build rule for target.
+Laba4.1/fast:
+	$(MAKE) -f CMakeFiles/Laba4.1.dir/build.make CMakeFiles/Laba4.1.dir/build
+.PHONY : Laba4.1/fast
 
 4.1.15.o: 4.1.15.c.o
 
@@ -129,7 +142,7 @@ Laba4/fast:
 
 # target to build an object file
 4.1.15.c.o:
-	$(MAKE) -f CMakeFiles/Laba4.dir/build.make CMakeFiles/Laba4.dir/4.1.15.c.o
+	$(MAKE) -f CMakeFiles/Laba4.1.dir/build.make CMakeFiles/Laba4.1.dir/4.1.15.c.o
 .PHONY : 4.1.15.c.o
 
 4.1.15.i: 4.1.15.c.i
@@ -138,7 +151,7 @@ Laba4/fast:
 
 # target to preprocess a source file
 4.1.15.c.i:
-	$(MAKE) -f CMakeFiles/Laba4.dir/build.make CMakeFiles/Laba4.dir/4.1.15.c.i
+	$(MAKE) -f CMakeFiles/Laba4.1.dir/build.make CMakeFiles/Laba4.1.dir/4.1.15.c.i
 .PHONY : 4.1.15.c.i
 
 4.1.15.s: 4.1.15.c.s
@@ -147,8 +160,35 @@ Laba4/fast:
 
 # target to generate assembly for a file
 4.1.15.c.s:
-	$(MAKE) -f CMakeFiles/Laba4.dir/build.make CMakeFiles/Laba4.dir/4.1.15.c.s
+	$(MAKE) -f CMakeFiles/Laba4.1.dir/build.make CMakeFiles/Laba4.1.dir/4.1.15.c.s
 .PHONY : 4.1.15.c.s
+
+4.2.15.o: 4.2.15.c.o
+
+.PHONY : 4.2.15.o
+
+# target to build an object file
+4.2.15.c.o:
+	$(MAKE) -f CMakeFiles/Laba4.2.dir/build.make CMakeFiles/Laba4.2.dir/4.2.15.c.o
+.PHONY : 4.2.15.c.o
+
+4.2.15.i: 4.2.15.c.i
+
+.PHONY : 4.2.15.i
+
+# target to preprocess a source file
+4.2.15.c.i:
+	$(MAKE) -f CMakeFiles/Laba4.2.dir/build.make CMakeFiles/Laba4.2.dir/4.2.15.c.i
+.PHONY : 4.2.15.c.i
+
+4.2.15.s: 4.2.15.c.s
+
+.PHONY : 4.2.15.s
+
+# target to generate assembly for a file
+4.2.15.c.s:
+	$(MAKE) -f CMakeFiles/Laba4.2.dir/build.make CMakeFiles/Laba4.2.dir/4.2.15.c.s
+.PHONY : 4.2.15.c.s
 
 # Help Target
 help:
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Laba4"
+	@echo "... Laba4.2"
+	@echo "... Laba4.1"
 	@echo "... 4.1.15.o"
 	@echo "... 4.1.15.i"
 	@echo "... 4.1.15.s"
+	@echo "... 4.2.15.o"
+	@echo "... 4.2.15.i"
+	@echo "... 4.2.15.s"
 .PHONY : help
 
 

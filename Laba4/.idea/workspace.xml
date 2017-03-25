@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
+      <config projectName="Laba4" targetName="Laba4.2" />
+      <config projectName="Laba4" targetName="Laba4.1" />
       <config projectName="Laba4" targetName="Laba4" />
     </generated>
   </component>
@@ -29,23 +31,37 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4.1.15.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="4.1.15.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4.1.15.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+            <state relative-caret-position="343">
+              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#68#125#0" expanded="false" />
-                <element signature="e#1385#2141#0" expanded="false" />
-                <element signature="e#2143#2392#0" expanded="false" />
+                <element signature="e#2159#2408#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4.2.15.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/4.2.15.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#87#144#0" expanded="false" />
+                <element signature="e#1641#2400#0" expanded="false" />
+                <element signature="e#2402#2822#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -56,6 +72,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/4.2.15.c" />
         <option value="$PROJECT_DIR$/4.1.15.c" />
       </list>
     </option>
@@ -108,7 +126,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Application.Laba4">
+  <component name="RunManager" selected="Application.Laba4.1">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Laba4" TARGET_NAME="Laba4" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -276,17 +294,22 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Laba4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Laba4" TARGET_NAME="Laba4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Laba4" RUN_TARGET_NAME="Laba4">
+    <configuration default="false" name="Laba4.1" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Laba4" TARGET_NAME="Laba4.1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Laba4" RUN_TARGET_NAME="Laba4.1">
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="Laba4.2" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$USER_HOME$/Downloads/words.txt /Users/gleblinkin/Desktop/text.txt" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Laba4" TARGET_NAME="Laba4.2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Laba4" RUN_TARGET_NAME="Laba4.2">
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Laba4" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Laba4.1" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Laba4.2" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -305,24 +328,26 @@
       <workItem from="1490182656702" duration="1925000" />
       <workItem from="1490255314767" duration="111000" />
       <workItem from="1490255502873" duration="8672000" />
-      <workItem from="1490356143092" duration="922000" />
+      <workItem from="1490356143092" duration="8137000" />
+      <workItem from="1490463818018" duration="1000" />
+      <workItem from="1490463948345" duration="1132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11630000" />
+    <option name="totallyTimeSpent" value="19978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="22" width="1241" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16196616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -344,28 +369,73 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/4.1.15.c">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#68#125#0" expanded="false" />
+            <element signature="e#2159#2408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.2.15.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#87#144#0" expanded="false" />
+            <element signature="e#1641#2400#0" expanded="false" />
+            <element signature="e#2402#2822#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.1.15.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#68#125#0" expanded="false" />
+            <element signature="e#2159#2408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.2.15.c">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#68#125#0" expanded="false" />
-            <element signature="e#1385#2141#0" expanded="false" />
-            <element signature="e#2143#2392#0" expanded="false" />
+            <element signature="e#87#144#0" expanded="false" />
+            <element signature="e#1641#2400#0" expanded="false" />
+            <element signature="e#2402#2822#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -385,8 +455,7 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#68#125#0" expanded="false" />
-            <element signature="e#1385#2141#0" expanded="false" />
-            <element signature="e#2143#2392#0" expanded="false" />
+            <element signature="e#2159#2408#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -406,8 +475,7 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#68#125#0" expanded="false" />
-            <element signature="e#1385#2141#0" expanded="false" />
-            <element signature="e#2143#2392#0" expanded="false" />
+            <element signature="e#2159#2408#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -417,6 +485,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.1.15.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#68#125#0" expanded="false" />
+            <element signature="e#2159#2408#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -434,15 +514,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/4.1.15.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+        <state relative-caret-position="343">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#68#125#0" expanded="false" />
-            <element signature="e#1385#2141#0" expanded="false" />
-            <element signature="e#2143#2392#0" expanded="false" />
+            <element signature="e#2159#2408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.2.15.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#87#144#0" expanded="false" />
+            <element signature="e#1641#2400#0" expanded="false" />
+            <element signature="e#2402#2822#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -30,8 +30,8 @@ int main(int argc, char *argv[]) {
     char *textString = getStringFromFile(textFile);
     char *dictString = getStringFromFile(dictionaryFile);
 
-    WordsArray *textWords = getWordsFromString(textString, " ,.\n");
-    WordsArray *dictWords = getWordsFromString(dictString, " ,.\n");
+    WordsArray *textWords = getWordsFromString(textString, " ,.\n\r");
+    WordsArray *dictWords = getWordsFromString(dictString, " ,.\n\r");
 
     free(textString);
     free(dictString);

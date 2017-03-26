@@ -68,7 +68,7 @@ WordsArray *getWordsFromString(char *string, const char *separators) {
             allocatedMemory *= 2;
             words = (char **)realloc(words, sizeof(char *) * allocatedMemory);
         }
-        words[wordsCount] = (char *)malloc(sizeof(char) * strlen(token));
+        words[wordsCount] = (char *)malloc(sizeof(char) * (strlen(token) + 1));
         strcpy(words[wordsCount], token);
         token = strtok(NULL, separators);
     }

@@ -11,10 +11,13 @@ typedef struct List {
     char *content;
 } List;
 
+
+List *init();
 void push_front(List **, char *);
-void insertAtIndex(List **, char *, int);
+int insertAtIndex(List **, char *, int);
 void deleteItem(List **, List *);
 List *findInList(List *, char *);
-List *clearList(List*);
+List *clearList(List **);
+void deleteList(List **);
 
 #endif //LIST_H

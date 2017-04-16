@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
     //Get every word in text to lower case
     for (int i = 0; i < textWords->count; ++i) {
         char *p = textWords->wordsArr[i];
-        for ( ; *p; ++p) *p = (char)tolower(*p); //A very hitriy kod
+        for ( ; *p; ++p) *p = (char)tolower(*p);
     }
 
     for (int j = 0, currentWordCount = 0; j < dictWords->count; ++j, currentWordCount = 0) {

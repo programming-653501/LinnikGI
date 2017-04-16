@@ -35,7 +35,7 @@ int main() {
         printf("%s ", currentWord);
     }
 
-    //>Here goes memory deallocation code< doyebatsa zdes
+    //>Here goes memory deallocation code
     return 0;
 }
 

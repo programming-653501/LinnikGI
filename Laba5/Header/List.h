@@ -11,7 +11,6 @@ typedef struct List {
     char *content;
 } List;
 
-
 List *init();
 void push_front(List **, char *);
 int insertAtIndex(List **, char *, int);

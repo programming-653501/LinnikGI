@@ -7,13 +7,13 @@
 #include <stdlib.h>
 #include <assert.h>
 
-int push(Stack **stack, int value) {
+int push(Stack **stack, List *value) {
     int res = 1;
 
     Stack *newElement = (Stack*)malloc(sizeof(Stack));
 
-    if (newElement == NULL) {
-        res = 0;
+    if (!newElement) {
+        exit(-1);
     } else {
         newElement->value = value;
         newElement->next = *stack;
@@ -23,28 +23,19 @@ int push(Stack **stack, int value) {
     return res;
 }
 
-int pop(Stack **stack) {
+List *pop(Stack **stack) {
     //assert(*stack != (*stack)->start);
 
-    int value = (*stack)->value;
+    List **value = &(*stack)->value;
     Stack *temp = (*stack)->next;
     free((*stack));
     *stack = temp;
 
-    return value;
+    return *value;
 }
 
-int watch(Stack *stack) {
+List *watch(Stack *stack) {
     return stack->value;
-}
-
-void printStack(Stack *stack) {
-    if (stack->next == NULL)
-        return;
-    while (stack) {
-        printf("%d\n", stack->value);
-        stack = stack->next;
-    }
 }
 
 void clearStack(Stack **stack) {

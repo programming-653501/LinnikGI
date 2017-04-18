@@ -12,10 +12,9 @@ typedef struct Stack {
     struct Stack *next;
 } Stack;
 
-int push(Stack **, int);
-int pop(Stack **);
-int watch(Stack *);
-void printStack(Stack *);
+int push(Stack **, List *);
+List * pop(Stack **);
+List * watch(Stack *);
 void clearStack(Stack **);
 
 #endif //STACK_H

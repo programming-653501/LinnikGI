@@ -2,15 +2,23 @@
 #include "Header/Stask.h"
 
 int main() {
-    List *list = NULL;
+    List *list = init();
     push_front(&list, "Char");
     push_front(&list, "Bash");
     push_front(&list, "Hello");
     insertAtIndex(&list, "World", 3);
 
-    List *item = list->next;
-    deleteItem(&list, item);
+    List *search = findInList(list, "World");
+    if (search)
+        search->content = "Sup";
 
-    printf("%s", list->content);
+    Stack *stack = NULL;
+    push(&stack, list);
+    push(&stack, list);
+    push(&stack, list);
+    push(&stack, list);
+    push(&stack, list);
+    List *check = pop(&stack);
+
     return 0;
 }

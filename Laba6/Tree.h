@@ -25,6 +25,7 @@ public:
     void insert(T key);
     void deleteNode(T key);
     TreeNode<T> *search(T key);
+    void balance();
 
     static TreeNodeType getNodeType(TreeNode<T> *node);
 private:

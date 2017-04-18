@@ -36,6 +36,8 @@ private:
 
 template <class T>
 struct TreeNode {
+    TreeNode() : TreeNode(NULL) {}
+    TreeNode(T key) : leftBranch(NULL), rightBranch(NULL), key(key) {}
     TreeNode *leftBranch;
     TreeNode *rightBranch;
     T key;

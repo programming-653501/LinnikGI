@@ -24,26 +24,19 @@ void Tree<T>::destroy(TreeNode<T> *leaf) {
     }
 }
 
-//Private methods definition
 template <class T>
 void Tree<T>::insert(T key, TreeNode<T> *leaf) {
     if (key < leaf->key) {
         if (leaf->leftBranch) {
             insert(key, leaf->leftBranch);
         } else {
-            leaf->leftBranch = new TreeNode<T>();
-            leaf->leftBranch->key = key;
-            leaf->leftBranch->leftBranch = NULL;
-            leaf->leftBranch->rightBranch = NULL;
+            leaf->leftBranch = new TreeNode<T>(key);
         }
     } else if (key > leaf->key) {
         if (leaf->rightBranch) {
             insert(key, leaf->rightBranch);
         } else {
-            leaf->rightBranch = new TreeNode<T>();
-            leaf->rightBranch->key = key;
-            leaf->rightBranch->leftBranch = NULL;
-            leaf->rightBranch->rightBranch = NULL;
+            leaf->rightBranch = new TreeNode<T>(key);
         }
     }
 }
@@ -73,10 +66,7 @@ void Tree<T>::insert(T key) {
     if (_root) {
         insert(key, _root);
     }else {
-        _root = new TreeNode<T>();
-        _root->key = key;
-        _root->leftBranch = NULL;
-        _root->rightBranch = NULL;
+        _root = new TreeNode<T>(key);
     }
 }
 

@@ -1,22 +1,19 @@
 #include <iostream>
 #include "Tree.cpp"
 
+using namespace std;
+
 int main() {
-    Tree<int> *tree = new Tree<int>();
-    tree->insert(10);
-    tree->insert(20);
-    tree->insert(30);
-    tree->insert(50);
-    tree->insert(90);
-    tree->insert(100);
-    tree->insert(150);
-    tree->insert(160);
-    tree->insert(200);
-    tree->insert(210);
+    string userEnteredString;
+    cout << "Enter the string to build the BTS: ";
+    cin >> userEnteredString;
+    Tree<char> *tree = new Tree<char>();
+    for (char character : userEnteredString) {
+        tree->insert(character);
+    }
+    cout << "Maximum level before balancing: " << tree->getMaxLevel(tree->_root, 0) + 1 << endl;
     tree->balance();
-    TreeNode<int> *a = tree->search(10);
-    tree->deleteNode(50);
-    std::cout << a->key << std::endl;
-    std::cout << Tree<int>::getNodeType(a) << std::endl;
+    cout << "Maximum level after balancing: " << tree->getMaxLevel(tree->_root, 0) + 1 << endl;
+    tree->print();
     return 0;
 }

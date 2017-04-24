@@ -2,9 +2,52 @@
 // Created by Gleb Linnik on 17.04.17.
 //
 
-#include <cstdlib>
 #include <cmath>
-#include "Tree.h"
+#include <iostream>
+
+template <class T>
+struct TreeNode;
+
+enum TreeNodeType {
+    TreeNodeTypeNullPtr,
+    TreeNodeTypeLeaf,
+    TreeNodeTypeOneKid,
+    TreeNodeTypeTwoKids,
+};
+
+template <class T>
+class Tree {
+public:
+    Tree();
+    ~Tree();
+
+    void destroy();
+    void insert(T key);
+    void deleteNode(T key);
+    TreeNode<T> *search(T key);
+    void balance();
+    void print();
+    int getMaxLevel(TreeNode<T> *node, int level);
+
+    static TreeNodeType getNodeType(TreeNode<T> *node);
+private:
+    void destroy(TreeNode<T> *leaf);
+    void insert(T key, TreeNode<T> *leaf);
+    TreeNode<T> *search(T key, TreeNode<T> *leaf);
+    void print(TreeNode<T> *leaf);
+
+public:
+    TreeNode<T> *_root;
+};
+
+template <class T>
+struct TreeNode {
+    TreeNode() : TreeNode(NULL) {}
+    TreeNode(T key) : leftBranch(NULL), rightBranch(NULL), key(key) {}
+    TreeNode *leftBranch;
+    TreeNode *rightBranch;
+    T key;
+};
 
 template <class T>
 Tree<T>::Tree() {
@@ -71,6 +114,10 @@ void Tree<T>::balance() {
     _root = pseudoRoot->rightBranch;
 }
 
+template <class T>
+void Tree<T>::print() {
+    print(_root);
+}
 
 template <class T>
 void Tree<T>::destroy(TreeNode<T> *leaf) {
@@ -206,6 +253,30 @@ TreeNode<T> *Tree<T>::search(T key) {
 }
 
 template <class T>
+void Tree<T>::print(TreeNode<T> *leaf) {
+    if (leaf->leftBranch) {
+        print(leaf->leftBranch);
+    }
+    std::cout << leaf->key << " ";
+    if (leaf->rightBranch){
+        print(leaf->rightBranch);
+    }
+}
+
+template <class T>
+int Tree<T>::getMaxLevel(TreeNode<T> *node, int level) {
+    if (!node)
+        return 0;
+
+    if (!(node->leftBranch) && !(node->rightBranch))
+        return level;
+
+    int leftLevel = getMaxLevel(node->leftBranch, level+1);
+    int rightLevel = getMaxLevel(node->rightBranch, level+1);
+    return leftLevel > rightLevel ? leftLevel : rightLevel;
+}
+
+template <class T>
 TreeNodeType Tree<T>::getNodeType(TreeNode<T> *node) {
     if (node) {
         if (node->leftBranch && node->rightBranch)
@@ -218,9 +289,5 @@ TreeNodeType Tree<T>::getNodeType(TreeNode<T> *node) {
         return TreeNodeTypeNullPtr;
     }
 }
-
-
-
-
 
 

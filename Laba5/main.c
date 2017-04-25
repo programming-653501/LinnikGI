@@ -1,24 +1,36 @@
 #include <stdio.h>
 #include "Header/Stask.h"
 
+void reversePrintList(List *list);
+
 int main() {
     List *list = init();
     push_front(&list, "Char");
     push_front(&list, "Bash");
     push_front(&list, "Hello");
-    insertAtIndex(&list, "World", 3);
+    push_front(&list, "World");
 
-    List *search = findInList(list, "World");
-    if (search)
-        search->content = "Sup";
+    reversePrintList(list);
 
     Stack *stack = NULL;
     push(&stack, list);
+
+    list = init();
+    push_front(&list, "Top");
+    push_front(&list, "Coders");
+    push_front(&list, "JetBrains");
+    push_front(&list, "Xcode");
+
+    reversePrintList(list);
+
     push(&stack, list);
-    push(&stack, list);
-    push(&stack, list);
-    push(&stack, list);
-    List *check = pop(&stack);
 
     return 0;
+}
+
+void reversePrintList(List *list) {
+    if (list->next) {
+        reversePrintList(list->next);
+        printf("%s ", list->content);
+    }
 }

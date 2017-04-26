@@ -1,0 +1,32 @@
+{
+  "topics" : [
+    {
+      "title" : "C basics",
+      "questions" : [
+      {
+        "question" : "With what function every C program stars?",
+        "answer" : [
+          "main()",
+          "void main()",
+          "int main()",
+          "int main(int argc, char* argv[])",
+          "main"
+        ]
+      },
+      {
+        "question" : "Is (3 + 4 > 2 && 3 < 2) true or false?",
+        "answer" : ["false"]
+      }
+      ]
+    },
+    {
+      "title" : "Functions",
+      "questions" : [
+        {
+          "question" : "What operator emidiatly terminates execution of the function?",
+          "answer" : ["return", "return;"]
+        }
+      ]
+    }
+  ]
+}

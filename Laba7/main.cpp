@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "Header/json.hpp"
+#include "Header/Topic.hpp"
 
 using namespace std;
 using json = nlohmann::json;
@@ -18,7 +19,7 @@ int main(int argc, char* argv[]) {
             "__/ /| |_/ /  _  _ \\_  ___/  __/\n"
             "_/ /_| |/ /   /  __/(__  )/ /_  \n"
             "/______/_/    \\___//____/ \\__/  \n"
-            "                                ";
+            "                                \n";
     string quizFile;
     if (argc == 1) {
         cout << "Please, enter the path to the Quiz file: ";

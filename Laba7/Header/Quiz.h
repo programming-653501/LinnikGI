@@ -6,14 +6,16 @@
 #define LABA7_QUIZ_H
 
 #include "json.hpp"
+#include "Topic.hpp"
 using json = nlohmann::json;
 
 class Quiz {
 public:
-    Quiz(json quizJson);
-
+    Quiz(const json &quizJson);
 private:
-
+    json quizJson;
+    std::vector<Topic> topics;
+    std::string name;
 };
 
 

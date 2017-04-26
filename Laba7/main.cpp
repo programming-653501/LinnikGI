@@ -1,14 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include "Header/json.hpp"
-#include "Header/Topic.hpp"
+#include "Header/Quiz.h"
 
 using namespace std;
 using json = nlohmann::json;
 
 int main(int argc, char* argv[]) {
     cout << "    ___   __ __\n"
-            "   /   | | || /\n"
+            "   /   | | |/ /\n"
             "  / /| |&|   /   \n"
             " / ___ | | |\\ \\  \n"
             "/_/  |_| |_| \\_\\Inc. \n"
@@ -36,6 +36,8 @@ int main(int argc, char* argv[]) {
         cout << "It seems you've passed the wrong file.\nProgram will terminate.\n";
         exit(1);
     }
-    //cout << quizJson["topics"][0]["title"] << endl;
+
+    Quiz *quiz = new Quiz(quizJson);
+    quiz->start();
     return 0;
 }

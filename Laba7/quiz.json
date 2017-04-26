@@ -16,7 +16,7 @@
       },
       {
         "question" : "Is (3 + 4 > 2 && 3 < 2) true or false?",
-        "answer" : ["false"]
+        "answer" : ["false", "False"]
       }
       ]
     },

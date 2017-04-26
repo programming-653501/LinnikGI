@@ -12,7 +12,9 @@ using json = nlohmann::json;
 class Quiz {
 public:
     Quiz(const json &quizJson);
+    void start();
 private:
+    void startQuizWithTopic(const Topic &topic);
     json quizJson;
     std::vector<Topic> topics;
     std::string name;

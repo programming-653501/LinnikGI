@@ -3,7 +3,7 @@
 //
 
 #include "../Header/Quiz.h"
-
+#include <iostream>
 
 Quiz::Quiz(const json &quizJson) : quizJson(quizJson) {
     name = quizJson["name"].get<std::string>();
@@ -24,17 +24,26 @@ Quiz::Quiz(const json &quizJson) : quizJson(quizJson) {
 
 void Quiz::start() {
     std::cout << "Hello! Welcome to " << name << std::endl;
-    std::cout << "This quiz has these topics:\n";
-    for (int i = 0; i < topics.size(); ++i) {
-        std::cout << i + 1 << ") " << topics[i].title << std::endl;
+    while (1) {
+        std::cout << "This quiz has these topics:\n";
+        for (int i = 0; i < topics.size(); ++i) {
+            std::cout << i + 1 << ") " << topics[i].title << std::endl;
+        }
+        std::cout << "0) Exit\n";
+        std::cout << "Choose the topic: ";
+        int choice;
+        std::cin >> choice;
+        if (choice) {
+            if (choice <= topics.size())
+                startQuizWithTopic(topics[choice - 1]);
+        } else {
+            break;
+        }
     }
-    std::cout << "Choose the topic: ";
-    int choice;
-    std::cin >> choice;
-    startQuizWithTopic(topics[choice - 1]);
 }
 
 void Quiz::startQuizWithTopic(const Topic &topic) {
+    uint correntAnswers = 0;
     for (int i = 0; i < topic.questions.size(); ++i) {
         Question question = topic.questions[i];
         std::cout << i + 1 << " question:\n" << question.question << std::endl;
@@ -43,8 +52,10 @@ void Quiz::startQuizWithTopic(const Topic &topic) {
         std::cin >> answer;
         if (std::find(question.answers.begin(), question.answers.end(), answer) != question.answers.end()) {
             std::cout << "Correct!\n";
+            correntAnswers++;
         } else {
             std::cout << "You just suck!\n";
         }
     }
+    std::cout << "You got " << correntAnswers << " out of " << topic.questions.size() << std::endl;
 }

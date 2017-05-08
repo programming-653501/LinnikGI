@@ -12,7 +12,9 @@
 struct Question {
     Question(const std::string &question, const std::vector<std::string> &answers) : question(question),
                                                                                      answers(answers) {}
+    //Строка с вопросом
     std::string question;
+    //Вектор из строк с вариантами правильных ответов
     std::vector<std::string> answers;
 };
 

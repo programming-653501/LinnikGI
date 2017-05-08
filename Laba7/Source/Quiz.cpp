@@ -44,8 +44,12 @@ void Quiz::start() {
             std::cout << "Please, enter correct input.\n\n";
         } else {
             if (choice) {
-                if (choice <= topics.size())
+                if (choice <= topics.size()) {
                     startQuizWithTopic(topics[choice - 1]);
+                } else {
+                    clearScreen();
+                    std::cout << "Please, enter the number of the topic or exit\n";
+                }
             } else {
                 break;
             }
@@ -54,21 +58,21 @@ void Quiz::start() {
 }
 
 void Quiz::startQuizWithTopic(const Topic &topic) {
-    uint correntAnswers = 0;
+    uint correctAnswers = 0;
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     for (int i = 0; i < topic.questions.size(); ++i) {
         Question question = topic.questions[i];
-        std::cout << i + 1 << " question:\n" << question.question << std::endl;
+        std::cout << i + 1 << "/" << topic.questions.size() << " question:\n" << question.question << std::endl;
         std::cout << "Answer: ";
         std::string answer;
         std::getline(std::cin, answer);
         clearScreen();
         if (std::find(question.answers.begin(), question.answers.end(), answer) != question.answers.end()) {
-            correntAnswers++;
+            correctAnswers++;
             std::cout << "Correct!\n\n";
         } else {
             std::cout << "You just suck!\n\n";
         }
     }
-    std::cout << "You got " << correntAnswers << " out of " << topic.questions.size() << "\n\n";
+    std::cout << "You got " << correctAnswers << " out of " << topic.questions.size() << "\n\n";
 }

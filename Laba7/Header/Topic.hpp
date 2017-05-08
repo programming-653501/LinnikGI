@@ -9,7 +9,9 @@
 
 struct Topic {
     Topic(const std::string &title, const std::vector<Question> &questions) : title(title), questions(questions) {}
+    //Строка с названием темы
     std::string title;
+    //Вектор из структуры вопросов с вопросами по данной теме
     std::vector<Question> questions;
 };
 

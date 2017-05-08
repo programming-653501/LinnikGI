@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
             "__  /| |_  /  _  _ \\_  ___/  __/\n"
             "_  /_| |/ /   /  __/(__  )/ /_  \n"
             "_______/_/    \\___//____/ \\__/  \n"
-            "                                \n";
+            "The universal testing application based on JSON\n\n";
     string quizFile;
     if (argc == 1) {
         cout << "Please, enter the path to the Quiz file: ";

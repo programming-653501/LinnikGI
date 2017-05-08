@@ -1,131 +1,131 @@
 {
-   "name":"C++ quiz",
-   "topics":[
-      {
-         "title":"Basic Concepts",
-         "questions":[
-            {
-               "question":"Fill in the blanks to include the iostream header:\n#include <_______>",
-               "answer":[
-                  "iostream"
-               ]
-            },
-            {
-               "question":"Fill in the blanks to use names from std namespace:\n_____ namespace std;",
-               "answer":[
-                  "using"
-               ]
-            },
-            {
-               "question":"With what function every C program stars?",
-               "answer":[
-                  "main()",
-                  "int main()",
-                  "int main();",
-                  "int main(int argc, char* argv[]);",
-                  "int main(int argc, char* argv[])",
-                  "main"
-               ]
-            },
-            {
-               "question":"With what character each instruction ends?",
-               "answer":[
-                  ";"
-               ]
-            },
-            {
-               "question":"Fill in the blanks to output 'Hello world!' on the screen:\n____ << \"Hello World\";",
-               "answer":[
-                  "cout",
-                  "std::cout"
-               ]
-            },
-            {
-               "question":"What set of characters indicates a single-line comment?",
-               "answer":[
-                  "//"
-               ]
-            },
-            {
-               "question":"What is the data type name for integers?",
-               "answer":[
-                  "int",
-                  "unit",
-                  "byte"
-               ]
-            },
-            {
-               "question":"Type in the code that allows for entering a number and storing it in the variable a:\n ___ >> a;",
-               "answer":[
-                  "cin",
-                  "std::cin"
-               ]
-            },
-            {
-               "question":"Which operator is used to determine the remainder?",
-               "answer":[
-                  "%"
-               ]
-            },
-            {
-               "question":"What is the alternative OPERATOR for x = x + 10?",
-               "answer":[
-                  "+=",
-                  "=+"
-               ]
-            },
-            {
-               "question":"What is the output of the following code?\nint a=3;\nint b=2;\nb=a++;\ncout<<++b;",
-               "answer":[
-                  "4"
-               ]
-            }
-         ]
-      },
-      {
-         "title":"Functions",
-         "questions":[
-            {
-               "question":"What operator emidiatly terminates execution of the function?",
-               "answer":[
-                  "return",
-                  "return;"
-               ]
-            },
-            {
-               "question":"What should we use if a function does not return any value?",
-               "answer":[
-                  "void"
-               ]
-            },
-            {
-               "question":"A function must be declared: after or before its call? (Type 'before' or 'after')",
-               "answer":[
-                  "before",
-                  "Before"
-               ]
-            },
-            {
-               "question":"Fill in the missing parts of the following code to define a function hello, which returns int and takes two parameters.\n ___ hello(int a, int b) {\n    //do something...\n}",
-               "answer":[
-                  "int"
-               ]
-            },
-            {
-               "question":"Type in the missing parameter type of the function, taking an integer value, and printing it to the screen.\nvoid myFunction(___ x) {\n    cout << x << endl;\n}",
-               "answer":[
-                  "int",
-                  "unit",
-                  "byte"
-               ]
-            },
-            {
-               "question":"Fill in the blanks to print a random number from 1 through 9.\n cout << 1 + ( rand() _ 9 ) << endl;",
-               "answer":[
-                  "%"
-               ]
-            }
-         ]
-      }
-   ]
+  "name": "C++ quiz",
+  "topics": [
+    {
+      "title": "Basic Concepts",
+      "questions": [
+        {
+          "question": "Fill in the blanks to include the iostream header:\n#include <_______>",
+          "answer": [
+            "iostream"
+          ]
+        },
+        {
+          "question": "Fill in the blanks to use names from std namespace:\n_____ namespace std;",
+          "answer": [
+            "using"
+          ]
+        },
+        {
+          "question": "With what function every C program stars?",
+          "answer": [
+            "main()",
+            "int main()",
+            "int main();",
+            "int main(int argc, char* argv[]);",
+            "int main(int argc, char* argv[])",
+            "main"
+          ]
+        },
+        {
+          "question": "With what character each instruction ends?",
+          "answer": [
+            ";"
+          ]
+        },
+        {
+          "question": "Fill in the blanks to output 'Hello world!' on the screen:\n____ << \"Hello World\";",
+          "answer": [
+            "cout",
+            "std::cout"
+          ]
+        },
+        {
+          "question": "What set of characters indicates a single-line comment?",
+          "answer": [
+            "//"
+          ]
+        },
+        {
+          "question": "What is the data type name for integers?",
+          "answer": [
+            "int",
+            "unit",
+            "byte"
+          ]
+        },
+        {
+          "question": "Type in the code that allows for entering a number and storing it in the variable a:\n ___ >> a;",
+          "answer": [
+            "cin",
+            "std::cin"
+          ]
+        },
+        {
+          "question": "Which operator is used to determine the remainder?",
+          "answer": [
+            "%"
+          ]
+        },
+        {
+          "question": "What is the alternative OPERATOR for x = x + 10?",
+          "answer": [
+            "+=",
+            "=+"
+          ]
+        },
+        {
+          "question": "What is the output of the following code?\nint a=3;\nint b=2;\nb=a++;\ncout<<++b;",
+          "answer": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "questions": [
+        {
+          "question": "What operator emidiatly terminates execution of the function?",
+          "answer": [
+            "return",
+            "return;"
+          ]
+        },
+        {
+          "question": "What should we use if a function does not return any value?",
+          "answer": [
+            "void"
+          ]
+        },
+        {
+          "question": "A function must be declared: after or before its call? (Type 'before' or 'after')",
+          "answer": [
+            "before",
+            "Before"
+          ]
+        },
+        {
+          "question": "Fill in the missing parts of the following code to define a function hello, which returns int and takes two parameters.\n ___ hello(int a, int b) {\n    //do something...\n}",
+          "answer": [
+            "int"
+          ]
+        },
+        {
+          "question": "Type in the missing parameter type of the function, taking an integer value, and printing it to the screen.\nvoid myFunction(___ x) {\n    cout << x << endl;\n}",
+          "answer": [
+            "int",
+            "unit",
+            "byte"
+          ]
+        },
+        {
+          "question": "Fill in the blanks to print a random number from 1 through 9.\n cout << 1 + ( rand() _ 9 ) << endl;",
+          "answer": [
+            "%"
+          ]
+        }
+      ]
+    }
+  ]
 }

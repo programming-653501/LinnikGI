@@ -15,8 +15,11 @@ public:
     void start();
 private:
     void startQuizWithTopic(const Topic &topic);
+    //Поле типа json для хранения json структуры данного теста
     json quizJson;
+    //Ветор из структуры темы с темами данного теста
     std::vector<Topic> topics;
+    //Строка с названием теста
     std::string name;
 };
 

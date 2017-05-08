@@ -71,7 +71,7 @@ void Quiz::startQuizWithTopic(const Topic &topic) {
             correctAnswers++;
             std::cout << "Correct!\n\n";
         } else {
-            std::cout << "You just suck!\n\n";
+            std::cout << "Wrong!\n\n";
         }
     }
     std::cout << "You got " << correctAnswers << " out of " << topic.questions.size() << "\n\n";

@@ -1,16 +1,7 @@
 # Линник Глеб
 
-Сделаны:
->1 лаба
+## Курсовая работа: [Notevox](https://github.com/GLinnik21/Notevox.git)
+>В репозитории есть [пояснительная записка](https://github.com/GLinnik21/Notevox/blob/master/Documentation.pdf)
 
->2 лаба
-
->3 лаба
-
->4 лаба
-
->5 лаба
-
->6 лаба
-
->7 лаба
+## Лабораторные работы
+Сделаны все лабы.
